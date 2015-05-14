@@ -16,6 +16,9 @@ import java.util.Scanner;
 			System.out.print("영어 점수 입력 : ");
 			int eng = scanner.nextInt();
 			
+			int sum = kor+math+eng;
+			
+			double avg = (double)sum/3;
 			
 			String sb = new StringBuilder()
 			.append("\n<< 점수 출력 >>")
@@ -24,7 +27,11 @@ import java.util.Scanner;
 			.append("\n수학 점수 : ")
 			.append(math)
 			.append("\n영어 점수 : ")
-			.append(eng).toString();
+			.append(eng)
+			.append("\n총점 : ")
+			.append(sum)
+			.append("\n평균 : ")
+			.append(String.format("%.1f",avg)).toString();
 			
 			System.out.println(sb);
 			
