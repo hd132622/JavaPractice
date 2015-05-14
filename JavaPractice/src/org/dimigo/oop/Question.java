@@ -19,5 +19,7 @@ public class Question {
 		String answer3 = scanner.nextLine();
 		if(answer3.equals("자바")) System.out.println("정답입니다.");
 		else System.out.println("틀렸습니다.");
+		
+		scanner.close();
 	}
 }
