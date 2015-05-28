@@ -16,7 +16,6 @@ public class IdolGroup {
 			for(int j =0; j<members[i].length; j++){
 				System.out.println(members[i][j]);
 			}
-			System.out.println();
 		}
 	}
 }
