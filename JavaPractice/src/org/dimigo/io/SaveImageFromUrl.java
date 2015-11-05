@@ -15,8 +15,7 @@ public class SaveImageFromUrl {
 		try {
 			URL url = new URL(imageUrl);
 			
-			try(InputStream is = url.openStream();
-				OutputStream os = new FileOutputStream("files/logo.png")){
+			try(InputStream is = url.openStream(); OutputStream os = new FileOutputStream("files/logo.png")){
 				// 파일에 write 하기
 				int result;
 				
@@ -30,11 +29,9 @@ public class SaveImageFromUrl {
 				
 			} catch (IOException e) {
 				e.printStackTrace();
-			}
-			
+			}			
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
 	}
-
 }

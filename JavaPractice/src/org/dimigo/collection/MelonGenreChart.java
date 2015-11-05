@@ -47,9 +47,8 @@ public class MelonGenreChart {
 		for(String key : map.keySet()) {
 			System.out.println("[" + key + "]");
 			for(Music music : map.get(key)) {
-				System.out.println(map.get(key).indexOf(music)+1 + "." + " " + music);
+				System.out.println((map.get(key).indexOf(music)+1) + "." + " " + music);
 			}
 		}
 	}
-
 }

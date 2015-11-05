@@ -8,7 +8,6 @@ public class Operator {
 		double s = (a+b)*h1*0.5;
 		double p = a*h2;
 		
-		
 		System.out.println("<< 도형 넓이 비교 >>");
 		System.out.println("사다리꼴 넓이 : "+s);
 		System.out.println("평행사변형 넓이 : "+p);
